@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.top-container, .mid-container, .bot-container {
+    padding: 40px;
+    min-height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#image-1 {
+    background-color: #ff4c68;
+    color: white;
+    height: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 50%;
+    text-align: center;
+}
+
+.about-me {
+    background-color: antiquewhite;
+    color: black;
+    height: 80%;
+    padding: 1.5rem;
+    width: 50%;
+}
