@@ -1,31 +1,56 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 10px;
+    align-items: center;
+    max-width: 900px;
 }
 
-.top-container, .mid-container, .bot-container {
-    padding: 40px;
-    min-height: 100vh;
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.top-container, .mid-container, .bot-container   {
+    min-height: 100%;
     background-color: lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    width: 100%;
+}
+
+.top-container{
+    background-color: lightgray;
+}
+
+.mid-container {
+    background-color: lightpink;
+}
+
+.bot-container {
+    background-color: lightskyblue;
+   
 }
 
 #image-1 {
     background-color: #ff4c68;
     color: white;
-    height: 100%;
-    padding: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -33,10 +58,42 @@ body {
     text-align: center;
 }
 
+.overlay-text {
+    position: absolute;
+    padding: 5px;
+}
+
 .about-me {
     background-color: antiquewhite;
     color: black;
-    height: 80%;
     padding: 1.5rem;
     width: 50%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: aqua;
+    min-width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-container {
+    gap: 0 20px;
+}
+
+.contact-me {
+    display: flex;
+    width: 200px;
+    height: 50%;
+    width: 50%;
+    background-color:lightcoral;
 }
